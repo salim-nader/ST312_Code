@@ -1,0 +1,221 @@
+QUESTION: How often do you buy cosmetic products from premium/luxury brands for yourself or someone else?
+answer,Female,Male,country
+Several times a month,33,17,uk
+At least once a month,96,49,uk
+At least once every 3 months,111,45,uk
+At least once every 6 months,36,19,uk
+At least once a year,20,7,uk
+Less often,10,11,uk
+Several times a month,32,18,germany
+At least once a month,82,59,germany
+At least once every 3 months,89,89,germany
+At least once every 6 months,39,24,germany
+At least once a year,17,8,germany
+Less often,20,12,germany
+Several times a month,38,18,italy
+At least once a month,104,75,italy
+At least once every 3 months,92,54,italy
+At least once every 6 months,37,22,italy
+At least once a year,10,15,italy
+Less often,9,12,italy
+Several times a month,29,18,france
+At least once a month,65,38,france
+At least once every 3 months,75,43,france
+At least once every 6 months,37,21,france
+At least once a year,27,10,france
+Less often,9,5,france
+
+
+answer,Traditionals & Baby Boomer (1922-1964),Generation X (Baby Bust) (1965-1979),Millennials / Generation Y (1980-1994),iGen / Gen Z (1995-2012),country
+Several times a month,3,8,24,15,uk
+At least once a month,5,38,72,30,uk
+At least once every 3 months,18,42,64,32,uk
+At least once every 6 months,11,16,20,8,uk
+At least once a year,1,5,14,7,uk
+Less often,5,6,7,3,uk
+Several times a month,4,11,18,17,germany
+At least once a month,20,31,55,35,germany
+At least once every 3 months,34,54,50,40,germany
+At least once every 6 months,12,14,21,16,germany
+At least once a year,5,7,7,6,germany
+Less often,5,8,11,8,germany
+Several times a month,5,19,25,7,italy
+At least once a month,25,63,64,27,italy
+At least once every 3 months,21,64,44,17,italy
+At least once every 6 months,9,21,23,6,italy
+At least once a year,4,12,5,4,italy
+Less often,2,8,9,2,italy
+Several times a month,2,5,29,11,france
+At least once a month,13,26,42,22,france
+At least once every 3 months,21,36,34,27,france
+At least once every 6 months,8,15,24,11,france
+At least once a year,3,11,15,8,france
+Less often,2,2,5,5,france
+
+
+answer,Up to   22 800,  22 800 up to   43 200,  43 200 up to   98 400,  98 400 and more,Prefer not to say,country
+Several times a month,11,23,12,2,2,uk
+At least once a month,31,54,45,8,7,uk
+At least once every 3 months,35,43,57,9,12,uk
+At least once every 6 months,21,12,13,5,4,uk
+At least once a year,6,8,9,2,2,uk
+Less often,10,4,5,1,1,uk
+Several times a month,14,13,13,6,4,germany
+At least once a month,34,44,51,6,6,germany
+At least once every 3 months,43,58,53,8,16,germany
+At least once every 6 months,8,24,23,4,4,germany
+At least once a year,8,5,8,2,2,germany
+Less often,12,8,6,3,3,germany
+Several times a month,9,16,19,8,4,italy
+At least once a month,32,61,47,21,18,italy
+At least once every 3 months,23,58,42,8,15,italy
+At least once every 6 months,8,20,20,3,8,italy
+At least once a year,6,7,12,0,0,italy
+Less often,8,9,3,0,1,italy
+Several times a month,7,19,16,4,1,france
+At least once a month,26,33,28,7,9,france
+At least once every 3 months,27,38,37,5,11,france
+At least once every 6 months,17,28,10,1,2,france
+At least once a year,9,15,6,1,6,france
+Less often,7,3,3,0,1,france
+
+
+
+"QUESTION: How often have you bought fashion and accessories from a premium/luxury brand on the internet in the past 2 years? If you are not sure,  please estimate."
+answer,Female,Male,country
+Less than 3 times,171,132,uk
+3   5 times,152,197,uk
+6   9 times,78,107,uk
+10 times or more often,28,45,uk
+Don't know,36,27,uk
+Less than 3 times,132,177,germany
+3   5 times,156,198,germany
+6   9 times,70,82,germany
+10 times or more often,33,50,germany
+Don't know,36,30,germany
+Less than 3 times,169,179,italy
+3   5 times,149,195,italy
+6   9 times,64,99,italy
+10 times or more often,27,38,italy
+Don't know,47,47,italy
+Less than 3 times,194,185,france
+3   5 times,145,173,france
+6   9 times,48,84,france
+10 times or more often,25,29,france
+Don't know,34,48,france
+
+
+answer,Traditionals & Baby Boomer (1922-1964),Generation X (Baby Bust) (1965-1979),Millennials / Generation Y (1980-1994),iGen / Gen Z (1995-2012),country
+Less than 3 times,54,99,108,42,uk
+3   5 times,27,84,170,68,uk
+6   9 times,4,40,83,58,uk
+10 times or more often,4,20,31,18,uk
+Don't know,8,17,20,18,uk
+Less than 3 times,53,98,95,63,germany
+3   5 times,47,74,136,97,germany
+6   9 times,7,29,54,62,germany
+10 times or more often,6,17,32,28,germany
+Don't know,9,20,26,11,germany
+Less than 3 times,66,130,90,62,italy
+3   5 times,49,108,124,63,italy
+6   9 times,10,53,67,33,italy
+10 times or more often,5,16,29,15,italy
+Don't know,18,40,22,14,italy
+Less than 3 times,63,128,121,67,france
+3   5 times,30,78,122,88,france
+6   9 times,8,25,58,41,france
+10 times or more often,3,14,24,13,france
+Don't know,12,25,29,16,france
+
+
+answer,Up to   22 800,  22 800 up to   43 200,  43 200 up to   98 400,  98 400 and more,Prefer not to say,country
+Less than 3 times,97,108,70,17,11,uk
+3   5 times,81,117,124,16,11,uk
+6   9 times,48,66,53,15,3,uk
+10 times or more often,14,14,30,9,6,uk
+Don't know,20,19,12,2,10,uk
+Less than 3 times,90,92,86,19,22,germany
+3   5 times,82,121,111,22,18,germany
+6   9 times,35,43,56,10,8,germany
+10 times or more often,15,20,27,15,6,germany
+Don't know,19,17,12,3,15,germany
+Less than 3 times,65,127,111,8,37,italy
+3   5 times,53,138,107,20,26,italy
+6   9 times,22,55,57,22,7,italy
+10 times or more often,8,15,26,12,4,italy
+Don't know,22,30,16,3,23,italy
+Less than 3 times,124,126,91,10,28,france
+3   5 times,89,119,81,10,19,france
+6   9 times,29,46,45,7,5,france
+10 times or more often,6,17,22,6,3,france
+Don't know,29,27,10,1,15,france
+
+
+"QUESTION: How often have you bought fashion and accessories from a premium/luxury brand in a physical store in the past 2 years? If you are not sure,  please estimate."
+answer,Female,Male,country
+Less than 3 times,192,163,uk
+3   5 times,149,175,uk
+6   9 times,62,99,uk
+10 times or more often,20,42,uk
+Don't know,42,29,uk
+Less than 3 times,162,187,germany
+3   5 times,123,188,germany
+6   9 times,67,80,germany
+10 times or more often,33,50,germany
+Don't know,42,32,germany
+Less than 3 times,168,176,italy
+3   5 times,155,211,italy
+6   9 times,66,99,italy
+10 times or more often,30,42,italy
+Don't know,37,30,italy
+Less than 3 times,206,169,france
+3   5 times,135,186,france
+6   9 times,49,81,france
+10 times or more often,25,35,france
+Don't know,31,48,france
+
+
+answer,Traditionals & Baby Boomer (1922-1964),Generation X (Baby Bust) (1965-1979),Millennials / Generation Y (1980-1994),iGen / Gen Z (1995-2012),country
+Less than 3 times,63,113,129,50,uk
+3   5 times,19,79,155,71,uk
+6   9 times,2,36,76,47,uk
+10 times or more often,3,13,27,19,uk
+Don't know,10,19,25,17,uk
+Less than 3 times,61,99,115,74,germany
+3   5 times,38,70,121,82,germany
+6   9 times,14,30,47,56,germany
+10 times or more often,2,13,34,34,germany
+Don't know,7,26,26,15,germany
+Less than 3 times,69,128,91,56,italy
+3   5 times,48,117,129,72,italy
+6   9 times,14,56,64,31,italy
+10 times or more often,5,24,27,16,italy
+Don't know,12,22,21,12,italy
+Less than 3 times,63,108,127,77,france
+3   5 times,35,91,117,78,france
+6   9 times,10,26,56,38,france
+10 times or more often,1,20,21,18,france
+Don't know,7,25,33,14,france
+
+
+answer,Up to   22 800,  22 800 up to   43 200,  43 200 up to   98 400,  98 400 and more,Prefer not to say,country
+Less than 3 times,108,122,94,18,13,uk
+3   5 times,85,116,93,21,9,uk
+6   9 times,34,51,64,7,5,uk
+10 times or more often,7,14,27,11,3,uk
+Don't know,26,21,11,2,11,uk
+Less than 3 times,96,112,99,17,25,germany
+3   5 times,70,112,95,19,15,germany
+6   9 times,30,38,59,12,8,germany
+10 times or more often,22,14,25,16,6,germany
+Don't know,23,17,14,5,15,germany
+Less than 3 times,68,141,100,9,26,italy
+3   5 times,51,139,120,18,38,italy
+6   9 times,22,54,59,19,11,italy
+10 times or more often,11,14,24,18,5,italy
+Don't know,18,17,14,1,17,italy
+Less than 3 times,125,125,96,8,21,france
+3   5 times,87,127,78,8,21,france
+6   9 times,29,44,44,8,5,france
+10 times or more often,7,18,23,8,4,france
+Don't know,29,21,8,2,19,france
