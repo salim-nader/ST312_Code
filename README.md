@@ -1,6 +1,6 @@
 # ST312 Code and Data
 
-Candidate Number: 44158 and 50537
+Candidate Numbers: 44158 and 50537
 
 The analysis was done in the following order and using the following programs:
 
