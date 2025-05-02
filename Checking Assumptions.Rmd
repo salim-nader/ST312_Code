@@ -1,0 +1,136 @@
+---
+title: "ST312"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## Import all libraries first.
+
+```{r}
+
+
+library(tidyverse)
+library(MASS)
+library(purrr)
+library(tidyr)
+library(stats)
+library(dplyr)
+library(purrr)
+library(car)
+library(reshape2)
+library(meta)
+library(broom)
+library(glue)        
+library(stringr)
+library(metafor)
+
+
+```
+
+
+# Checking Assumptions for the 4 products
+
+# We convert to long format first
+# Then we fit a Poisson GLM model on each contingency table and check for the assumptions.
+
+```{r}
+
+
+
+process_block <- function(block) {
+  question <- sub("^QUESTION:\\s*", "", block[1])
+  table_starts <- grep("^answer,", block)
+  
+  if (length(table_starts) < 3) return(NULL)
+
+  gender_lines <- block[table_starts[1] : (table_starts[2] - 1)]
+  age_lines    <- block[table_starts[2] : (table_starts[3] - 1)]
+  income_lines <- block[table_starts[3] : length(block)]
+
+  gender_df <- read.csv(text = gender_lines, stringsAsFactors = FALSE, check.names = FALSE)
+  income_df <- read.csv(text = income_lines, stringsAsFactors = FALSE, check.names = FALSE)
+  age_df    <- read.csv(text = age_lines, stringsAsFactors = FALSE, check.names = FALSE)
+
+  gender_long <- gender_df %>%
+    pivot_longer(cols = -c(answer, country), names_to = "Group", values_to = "Count") %>%
+    mutate(Question = question, Demographic = "Gender", Count = as.numeric(Count)) %>%
+    filter(!is.na(Count))
+
+  income_long <- income_df %>%
+    pivot_longer(cols = -c(answer, country), names_to = "Group", values_to = "Count") %>%
+    mutate(Question = question, Demographic = "Income", Count = as.numeric(Count)) %>%
+    filter(!is.na(Count))
+
+  age_long <- age_df %>%
+    pivot_longer(cols = -c(answer, country), names_to = "Group", values_to = "Count") %>%
+    mutate(Question = question, Demographic = "Age", Count = as.numeric(Count)) %>%
+    filter(!is.na(Count))
+
+  bind_rows(gender_long, income_long, age_long)
+}
+
+# Files to process
+product_files <- list(
+  "cosmetics.csv" = TRUE,  # clean commas
+  "fashion.csv" = TRUE,    # clean commas
+  "watches.csv" = FALSE,   # DO not clean commas - watches did not have the same trailing commas problem.
+  "jewelry.csv" = FALSE    # DO not clean commas - jewelry also did not have the same problem.
+)
+
+all_blocks <- list()
+
+for (file in names(product_files)) {
+  raw_lines <- readLines(file, encoding = "latin1")
+  raw_lines <- gsub(",+$", "", raw_lines)  
+  
+  # Conditionally clean trailing commas
+  if (product_files[[file]]) {
+    
+    raw_lines <- gsub('"([^"]*)"', '\\1', raw_lines) # <-- CONDITIONALLY executed
+  }
+
+  question_indices <- grep("^QUESTION:", raw_lines)
+  for (i in seq_along(question_indices)) {
+    start <- question_indices[i]
+    end <- if (i < length(question_indices)) question_indices[i + 1] - 1 else length(raw_lines)
+    all_blocks[[length(all_blocks) + 1]] <- raw_lines[start:end]
+  }
+}
+
+all_data <- map_dfr(all_blocks, process_block)
+
+all_data <- all_data %>%
+  mutate(
+    Answer = factor(answer),
+    Country = factor(country),
+    Group = factor(Group)
+  )
+
+check_model <- function(df) {
+  mod <- glm(as.formula("Count ~ Answer + Country + Group"), 
+             family = poisson, data = df)
+  
+  dispersion_ratio <- sum(residuals(mod, type = "pearson")^2) / mod$df.residual
+  cat("QUESTION:", df$Question[1], "| DEMOGRAPHIC:", df$Demographic[1], "| Dispersion ratio:", round(dispersion_ratio, 2), "\n\n")
+  
+  X <- model.matrix(mod)
+  if (qr(X)$rank < ncol(X)) {
+    warning("Perfect multicollinearity detected")
+  }
+
+  return(mod)
+}
+
+results <- all_data %>%
+  group_by(Question, Demographic) %>%
+  group_split() %>%
+  map(check_model)
+
+
+
+```
