@@ -1,4 +1,4 @@
-# ST312_Code
+# ST312 Code and Data
 
 1) Data Manipulation (1/3) -
 
