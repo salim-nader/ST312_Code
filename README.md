@@ -1,8 +1,12 @@
-# ST312 Code and Data
+# Final Year Applied Statistics Project - Identifying Behavioural Drivers of Purchasing decisions 
 
 Candidate Numbers: 44158 and 50537
 
-Modelling:
+**Project Description:**
+
+
+
+**Modelling:**
 
 The analysis was done in the following order and using the following programs:
 
@@ -14,7 +18,13 @@ The analysis was done in the following order and using the following programs:
 
 
 
-Data:
+**Data:**
 
 1) Original Data contains the data we collected at the start in its original form.
-2) Group Data contains the three final datasets we used for our analysis and model fitting. 
+2) Group Data contains the three final datasets we used for our analysis and model fitting.
+
+
+
+**Results:**
+
+
